@@ -1,10 +1,10 @@
 const navbarNav = document.querySelector
 ('.navbar-nav');
-document.querySelector('#menu').onclick = () => {
+document.querySelector('#hamburger').onclick = () => {
     navbarNav.classList.toggle('active');
 };
 
-const menu = document.querySelector('#menu');
+const menu = document.querySelector('#hamburger');
 
 document.addEventListener('click', function(e) {
     if(!menu.contains(e.target) && !navbarNav.contains(e.target)){
